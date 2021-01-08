@@ -1,0 +1,154 @@
+<svg fill="none" viewBox="0 0 800 400" width="800" height="400" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+		
+			<div class="container">
+				<div class="sky">
+                    <div class="moon">
+                        <div class="crater"></div>
+                        <div class="crater"> </div>
+                        <div class="crater"></div>
+                    </div>
+                </div>
+                    
+                    <div class="star-cont">
+                        <div class="shooting-star">
+                        </div>
+                    </div>
+                    <div class="mountain" id="mountain1"></div>
+                    <div class="mountain" id="mountain2"></div>
+                    <div class="mountain" id="mountain3"></div>
+            </div>
+            
+			<style>
+			.container {
+                margin: 0;
+                width: 100%;
+                height: 300px;
+                border-radius: 4px;
+  			}
+              body {
+                height: 100vh;
+                overflow: hidden;
+            }
+
+            .sky{
+                background: linear-gradient(149deg, rgba(85, 85, 85, 0.05) 0%, rgba(85, 85, 85, 0.05) 25%,rgba(11, 11, 11, 0.05) 25%, rgba(11, 11, 11, 0.05) 50%,rgba(182, 182, 182, 0.05) 50%, rgba(182, 182, 182, 0.05) 75%,rgba(28, 28, 28, 0.05) 75%, rgba(28, 28, 28, 0.05) 100%),linear-gradient(232deg, rgba(145, 145, 145, 0.05) 0%, rgba(145, 145, 145, 0.05) 25%,rgba(165, 165, 165, 0.05) 25%, rgba(165, 165, 165, 0.05) 50%,rgba(84, 84, 84, 0.05) 50%, rgba(84, 84, 84, 0.05) 75%,rgba(131, 131, 131, 0.05) 75%, rgba(131, 131, 131, 0.05) 100%),linear-gradient(321deg, rgba(254, 254, 254, 0.05) 0%, rgba(254, 254, 254, 0.05) 25%,rgba(249, 249, 249, 0.05) 25%, rgba(249, 249, 249, 0.05) 50%,rgba(0, 0, 0, 0.05) 50%, rgba(0, 0, 0, 0.05) 75%,rgba(104, 104, 104, 0.05) 75%, rgba(104, 104, 104, 0.05) 100%),linear-gradient(90deg, rgb(21, 8, 116),rgb(111, 197, 250));
+                width: 100%;
+                height: 100%;
+                position: fixed;
+                top: 0;
+                left: 0;
+            }
+
+            .moon{
+                height: 200px;
+                width: 200px;
+                background-color: #BFBDC1;
+                border-radius: 50%;
+                float: center;
+                position: absolute;
+                top: 10%;
+                left: 22%;
+                transform: rotate(110deg);
+                box-shadow: inset -23px -25px #D9DBF1,
+                -2px -1px 1px darkblue,
+                2px 2px 1px darkblue,
+                -3px -3px 153px gainsboro;
+            } 
+            .crater {
+                background: #D9DBF1;
+                position: absolute;
+                border-radius: 50%;
+            
+            }
+            .crater:nth-child(1) {
+                top: 50px;
+                right: 140px;
+                width: 30px;
+                height: 30px;
+            }
+            .crater:nth-child(2) {
+                top: 40px;
+                right: 80px;
+                width: 14px;
+                height: 14px;
+            }
+            .crater:nth-child(3) {
+                top: 110px;
+                right: 80px;
+                width: 18px;
+                height: 18px;
+            }
+
+            .mountain{
+                box-shadow: -2px -1px 1px gainsboro;
+                border-radius: 20px 0 0 0;
+                z-index: 3;
+                transform: rotate(45deg);
+                position: fixed;
+            }
+
+            #mountain1 {
+                height: 450px;
+                width: 550px;
+                top: 70%;
+                background: rgb(97,180,114);
+                background: linear-gradient(0deg, rgba(97,180,114,1) 0%, rgba(140,155,60,1) 53%, rgba(135,72,190,1) 100%);
+            }
+
+            #mountain2 {
+                background: rgb(154,190,72);
+                background: linear-gradient(90deg, rgba(27,133,110,1) 0%, rgba(154,190,72,1) 65%);
+                height: 400px;
+                width: 400px;
+                top: 80%;
+                left: 20%;
+            }
+
+            #mountain3 {
+                background: rgb(97,180,162);
+background: linear-gradient(20deg, rgba(97,180,162,1) 60%, rgba(135,72,190,1) 100%);
+                height: 500px;
+                width: 650px;
+                top: 80%;
+                left: 50%;
+            }
+ 
+            .star-cont {
+                position: relative;
+                width: 100vw;
+                height: 100vh;
+                transform: rotateZ(45deg);
+                z-index: 2;
+            }
+
+            .shooting-star {
+                position: absolute;
+                left: 40%;
+                top: 20%;
+                height: 2px;
+                background: linear-gradient(-45deg, rgba(95, 145, 255, 1), rgba(0, 0, 255, 0));
+                border-radius: 999px;
+                filter: drop-shadow(0 0 6px rgba(105, 155, 255, 1));
+                animation:
+                tail 8s ease-in-out infinite,
+                shoot 8s ease-in-out infinite;
+            }
+ 
+            @keyframes tail {
+                0% {width: 0;}
+                30% {width: 100px;}
+                100% {width: 0;}
+            }
+
+            @keyframes shoot {
+                0% {transform: translateX(-500px);}
+                100% {transform: translateX(500px);}
+            }
+
+			</style>
+			
+		</div>
+	</foreignObject>
+</svg>
