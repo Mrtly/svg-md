@@ -1,0 +1,44 @@
+<svg fill="none" viewBox="0 0 50 50" width="50" height="50" xmlns="http://www.w3.org/2000/svg">
+	<foreignObject width="100%" height="100%">
+		<div xmlns="http://www.w3.org/1999/xhtml">
+		
+			<div class="container">
+				<svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+				<path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4.318 6.318a4.5 4.5 0 000 6.364L12 20.364l7.682-7.682a4.5 4.5 0 00-6.364-6.364L12 7.636l-1.318-1.318a4.5 4.5 0 00-6.364 0z" />
+				</svg>
+			</div>
+
+			<style>
+				.container {
+					font-family: 'Courier', monospace, sans-serif;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					justify-content: center;
+					margin: 0;
+					width: 50px;
+					height: 50px;
+					background: linear-gradient(-45deg, #2d6a4f, #52b788, #fefae0, #dda15e, #bc6c25);
+					background-size: 400% 200%;
+					border-radius: 4px;
+					color: #9e2a2b;
+					box-shadow: inset 0 0 10px #000000;
+					text-align: center;
+					animation: gradientBackground 15s ease infinite ;
+				}
+				@keyframes gradientBackground {
+					0% {
+						background-position: 0% 50%;
+					}
+					50% {
+						background-position: 100% 50% ;
+					}
+					100% {
+						background-position: 0% 50% ;
+					}
+				}
+			</style>
+			
+		</div>
+	</foreignObject>
+</svg>
